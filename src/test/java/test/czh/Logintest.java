@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import test.czh.util.ProUtil;
+
 public class Logintest {
 
 	public WebDriver driver;
@@ -17,26 +19,29 @@ public class Logintest {
 		
 	}
 	
-	public void UserLogin(){
+	public void UserLogin(String UserName,String PassWord){
 		/*System.setProperty("webdriver.chrome.driver", "D:\\study\\chromedriver.exe");
 		 WebDriver driver = new ChromeDriver();
 		 driver.get("http://www.imooc.com/user/newlogin/from_url/1005/");*/
-		String UserElement ="email";
+		/*String UserElement ="email";
 		String UserGetBy ="name";
 		String PassElement ="password";
 		String PassGetBy ="name";
 		String LoginElement ="moco-btn-red";
 		String LoginGetBy ="className";
-		String UserName ="13129562261";
-		String PassWord ="czh19930419";
 		String HeadELement="header-avator";
 		String HeadGetBy="id";
 		String UserNameElement="text-ellipsis";
-		String UserNameGet="className";
+		String UserNameGet="className";*/
 	//	WebElement userElement=driver.findElement(By.name(UserElement));
-		WebElement userElement=GetElement(UserGetBy, UserElement);
-		WebElement PasswordElement=GetElement(PassGetBy, PassElement);
-		WebElement LoginButtonElement=GetElement(LoginGetBy, LoginElement);
+	//	String UserName ="13129562261";
+	//	String PassWord ="czh19930419";
+		String usename;
+		IntDriver();
+		
+		WebElement userElement=GetElement("username");
+		WebElement PasswordElement=GetElement("password");
+		WebElement LoginButtonElement=GetElement("LoginElement");
 		userElement.sendKeys(UserName);
 		PasswordElement.sendKeys(PassWord);
 		LoginButtonElement.click();
@@ -47,10 +52,10 @@ public class Logintest {
 			e1.printStackTrace();
 		}
 		try{
-		WebElement UserPng=GetElement(HeadGetBy, HeadELement);
+		WebElement UserPng=GetElement("HeadELement");
 		Actions MoseAction=new Actions(driver);
 		MoseAction.moveToElement(UserPng).perform();
-		String username=GetElement(UserNameGet, UserNameElement).getText();
+		String username=GetElement("UserNameElement").getText();
 		if(username.equals("慕妹9464969")){
 			System.out.println("登录成功");
 		}else{
@@ -67,28 +72,31 @@ public class Logintest {
 	
 	
 	
-	public By GetByLocal(String getby,String getValue){
-		if(getby.equals("id")){
-		return	By.id(getValue);
+	public By GetByLocal(String key){
+		ProUtil ProU=new ProUtil("element.properties");
+		String Locator=ProU.GetPro(key);
+		String LocatorBy=Locator.split(">")[0];
+		String LocatorValue=Locator.split(">")[1];
+		if(LocatorBy.equals("id")){
+		return	By.id(LocatorValue);
 		}
-		else if (getby.equals("name")){
-			return	By.name(getValue);
+		else if (LocatorBy.equals("name")){
+			return	By.name(LocatorValue);
 		}
-		else if (getby.equals("className")){
-			return	By.className(getValue);
+		else if (LocatorBy.equals("className")){
+			return	By.className(LocatorValue);
 		}
 		else {
-			return	By.xpath(getValue);
+			return	By.xpath(LocatorValue);
 		}
 	}
 	
-	
-	public WebElement GetElement(String getby,String getValue){
-		By test=	this.GetByLocal(getby, getValue);
-		System.out.println(test);
-		System.out.println(driver);
+	public void GetBylocator(String key){
+		
+	}
+	public WebElement GetElement(String key){
 
-		WebElement Element= driver.findElement(test);
+		WebElement Element= driver.findElement(this.GetByLocal(key));
 		return Element;
 	}
 	public static void main(String[] args){
@@ -96,7 +104,7 @@ public class Logintest {
 			
 		Logintest lt=new Logintest();
 		lt.IntDriver();
-		lt.UserLogin();
+		lt.UserLogin("13129562261","");
 		
 		
 	}

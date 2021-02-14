@@ -7,27 +7,38 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ProUtil {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//String FilePath;
-		String user;
+	public Properties Pro;
+	public ProUtil(String FilePath){
+		Pro=RedProperties(FilePath);
+	}
+	public Properties RedProperties(String FilePath){
 		Properties properties=new Properties();
+		FileInputStream fileInputStream;
 		try {
-			FileInputStream fileInputStream=new FileInputStream("element.properties");
+			fileInputStream = new FileInputStream(FilePath);
 			BufferedInputStream In=new BufferedInputStream(fileInputStream);
-			try {
-				properties.load(In);
-				user=properties.getProperty("username");
-				System.out.println(user);
+			properties.load(In);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		return properties;
+	}
+	
+	public String GetPro(String key){
+		String Value;
+		if(Pro.containsKey(key)){
+			Value=Pro.getProperty(key);
+			return Value;
 		}
+		else{
+			return "";
+		}
+	}
+	
+	public static void main(String[] args) {
+		ProUtil ProU=new ProUtil("element.properties");
+		System.out.println(ProU.GetPro("username"));
 	}
 
 }
