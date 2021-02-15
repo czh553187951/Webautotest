@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import test.czh.util.ProUtil;
 
@@ -19,7 +20,8 @@ public class Logintest {
 		
 	}
 	
-	public void UserLogin(String UserName,String PassWord){
+	@Test
+	public void UserLogin(){
 		/*System.setProperty("webdriver.chrome.driver", "D:\\study\\chromedriver.exe");
 		 WebDriver driver = new ChromeDriver();
 		 driver.get("http://www.imooc.com/user/newlogin/from_url/1005/");*/
@@ -36,42 +38,55 @@ public class Logintest {
 	//	WebElement userElement=driver.findElement(By.name(UserElement));
 	//	String UserName ="13129562261";
 	//	String PassWord ="czh19930419";
-		String usename;
-		IntDriver();
-		
-		WebElement userElement=GetElement("username");
-		WebElement PasswordElement=GetElement("password");
-		WebElement LoginButtonElement=GetElement("LoginElement");
-		userElement.sendKeys(UserName);
-		PasswordElement.sendKeys(PassWord);
-		LoginButtonElement.click();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+		ProUtil pro=new ProUtil("user.properties");
+		String username;
+		String password;
+		String user;
+
+		int Lines=pro.Getlines();
+		for(int i=0;i<Lines;i++){
+			IntDriver();
+
+		   	user=pro.GetPro("user"+i);
+			 username=user.split(">")[0];
+			 password=user.split(">")[1];
+			
+			WebElement userElement=GetElement("username");
+			WebElement PasswordElement=GetElement("password");
+			WebElement LoginButtonElement=GetElement("LoginElement");
+			userElement.sendKeys(username);
+			PasswordElement.sendKeys(password);
+			LoginButtonElement.click();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			try{
+			WebElement UserPng=GetElement("HeadELement");
+			Actions MoseAction=new Actions(driver);
+			MoseAction.moveToElement(UserPng).perform();
+			String usernameinfo=GetElement("UserNameElement").getText();
+			if(usernameinfo.equals("慕妹9464969")){
+				System.out.println("登录成功");
+			}else{
+				System.out.println("用户信息不匹配"+username);
+			}
+			
+			
+			}catch(Exception e){
+				System.out.println("登录失败");
+			}
+			
+			driver.close();
 		}
-		try{
-		WebElement UserPng=GetElement("HeadELement");
-		Actions MoseAction=new Actions(driver);
-		MoseAction.moveToElement(UserPng).perform();
-		String username=GetElement("UserNameElement").getText();
-		if(username.equals("慕妹9464969")){
-			System.out.println("登录成功");
-		}else{
-			System.out.println("用户信息不匹配"+username);
-		}
 		
 		
-		}catch(Exception e){
-			System.out.println("登录失败");
-		}
-		
-		driver.close();
 	}
 	
 	
-	
+	//定位元素方法封装
 	public By GetByLocal(String key){
 		ProUtil ProU=new ProUtil("element.properties");
 		String Locator=ProU.GetPro(key);
@@ -99,14 +114,6 @@ public class Logintest {
 		WebElement Element= driver.findElement(this.GetByLocal(key));
 		return Element;
 	}
-	public static void main(String[] args){
-		// TODO Auto-generated method stub
-			
-		Logintest lt=new Logintest();
-		lt.IntDriver();
-		lt.UserLogin("13129562261","");
-		
-		
-	}
+
 
 }

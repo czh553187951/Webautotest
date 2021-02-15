@@ -36,6 +36,10 @@ public class ProUtil {
 		}
 	}
 	
+	public int Getlines(){
+		return Pro.size();
+	}
+	
 	public static void main(String[] args) {
 		ProUtil ProU=new ProUtil("element.properties");
 		System.out.println(ProU.GetPro("username"));

@@ -1,0 +1,45 @@
+package test.czh;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITestResult;
+import org.testng.TestListenerAdapter;
+
+import com.google.common.io.Files;
+
+public class TestNGListenerScreen extends TestListenerAdapter{
+	@Override
+	  public void onTestFailure(ITestResult tr) {
+		System.out.println(tr.getInstance());
+		TestNGCase tc=(TestNGCase)tr.getInstance();
+		WebDriver driver=tc.driver;
+		this.TakeScreenShot(driver);
+		super.onTestFailure(tr);
+	  }
+
+	 public void TakeScreenShot(WebDriver driver){
+		  //获取当前时间
+		  SimpleDateFormat sdf=new SimpleDateFormat("yyyy_mm_dd_HH_mm_ss");
+		  String curTime =sdf.format(new Date());
+		  //获取当前类名
+		  String curClassName=this.getClass().getName();
+		  //获取当前路径
+		  String curPath=System.getProperty("user.dir");
+		  String pngPath = curClassName+"_"+curTime+".png";
+		  //截图
+		 File ScRFile= ((RemoteWebDriver)driver).getScreenshotAs(OutputType.FILE);
+		 try {
+			Files.copy(ScRFile, new File(curPath+"\\"+pngPath));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		  
+	  }
+}
