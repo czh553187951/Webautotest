@@ -1,217 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="5" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4927" started-at="2021-02-15T14:12:51Z" finished-at="2021-02-15T14:12:56Z">
+  <suite name="Default suite" duration-ms="28011" started-at="2021-02-17T09:06:30Z" finished-at="2021-02-17T09:06:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4927" started-at="2021-02-15T14:12:51Z" finished-at="2021-02-15T14:12:56Z">
-      <class name="test.czh.TestNGCase">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="beforeTest" is-config="true" duration-ms="11" started-at="2021-02-15T22:12:51Z" finished-at="2021-02-15T22:12:51Z">
+    <test name="Default test" duration-ms="28011" started-at="2021-02-17T09:06:30Z" finished-at="2021-02-17T09:06:58Z">
+      <class name="test.czh.CourseList">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.czh.CourseList@27f674d]" name="beforeTest" is-config="true" duration-ms="9" started-at="2021-02-17T17:06:30Z" finished-at="2021-02-17T17:06:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="beforeClass" is-config="true" duration-ms="3754" started-at="2021-02-15T22:12:51Z" finished-at="2021-02-15T22:12:55Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.czh.CourseList@27f674d]" name="beforeClass" is-config="true" duration-ms="7914" started-at="2021-02-17T17:06:30Z" finished-at="2021-02-17T17:06:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="f1()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="f1" duration-ms="137" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.czh.CourseList@27f674d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-17T17:06:38Z" finished-at="2021-02-17T17:06:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:test.czh.CourseList@27f674d]" name="test2" duration-ms="19076" started-at="2021-02-17T17:06:38Z" finished-at="2021-02-17T17:06:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.czh.CourseList@27f674d]" name="afterMethod" is-config="true" duration-ms="1000" started-at="2021-02-17T17:06:57Z" finished-at="2021-02-17T17:06:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="f2()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="f2" duration-ms="75" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f2 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f3()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="f3" duration-ms="107" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="f4()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="f4" duration-ms="31" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#password"}
-  (Session info: chrome=88.0.4324.150)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-NUUGM2A', ip: '10.0.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir9908_780513383}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60289}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: c55af51aa31c03ebaa16dd06b8901123
-*** Element info: {Using=id, value=password}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#password"}
-  (Session info: chrome=88.0.4324.150)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-NUUGM2A', ip: '10.0.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir9908_780513383}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60289}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: c55af51aa31c03ebaa16dd06b8901123
-*** Element info: {Using=id, value=password}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at test.czh.TestNGCase.f4(TestNGCase.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f4 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="f5()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="f5" duration-ms="24" started-at="2021-02-15T22:12:55Z" finished-at="2021-02-15T22:12:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#password"}
-  (Session info: chrome=88.0.4324.150)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-NUUGM2A', ip: '10.0.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir9908_780513383}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60289}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: c55af51aa31c03ebaa16dd06b8901123
-*** Element info: {Using=id, value=password}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#password"}
-  (Session info: chrome=88.0.4324.150)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-NUUGM2A', ip: '10.0.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir9908_780513383}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60289}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: c55af51aa31c03ebaa16dd06b8901123
-*** Element info: {Using=id, value=password}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at test.czh.TestNGCase.f5(TestNGCase.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f5 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:56Z" finished-at="2021-02-15T22:12:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="afterClass" is-config="true" duration-ms="52" started-at="2021-02-15T22:12:56Z" finished-at="2021-02-15T22:12:56Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.czh.CourseList@27f674d]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-02-17T17:06:58Z" finished-at="2021-02-17T17:06:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.czh.TestNGCase@2f7a2457]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-02-15T22:12:56Z" finished-at="2021-02-15T22:12:56Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.czh.CourseList@27f674d]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-02-17T17:06:58Z" finished-at="2021-02-17T17:06:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- test.czh.TestNGCase -->
+      </class> <!-- test.czh.CourseList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
