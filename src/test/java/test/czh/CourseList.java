@@ -22,7 +22,7 @@ public class CourseList {
 	
 	 @BeforeClass
 	  public void beforeClass() throws Exception {
-		     System.setProperty("webdriver.chrome.driver", "D:\\study\\chromedriver.exe");
+		     System.setProperty("webdriver.chrome.driver", "D:\\BaiduNetdiskDownload\\chromedriver.exe");
 			 driver = new ChromeDriver();
 			 driver.get("https://zhan.zzxes.com.cn/#/");
 			 Thread.sleep(2000);
@@ -108,7 +108,7 @@ public class CourseList {
 
 	  @AfterClass
 	  public void afterClass() {
-		//	  driver.close();
+			  driver.close();
 	  }
 
 	  @BeforeTest

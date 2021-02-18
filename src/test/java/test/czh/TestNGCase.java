@@ -103,7 +103,7 @@ public class TestNGCase {
   public void beforeClass() {
 		PropertyConfigurator.configure("log4j.properties");
 
-	  System.setProperty("webdriver.chrome.driver", "D:\\study\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\BaiduNetdiskDownload\\chromedriver.exe");
 		 driver = new ChromeDriver();
 		 driver.get("http://www.imooc.com/user/newlogin/from_url/1005/");
   }
