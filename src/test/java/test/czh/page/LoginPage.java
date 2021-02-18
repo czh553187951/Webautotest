@@ -34,4 +34,13 @@ public class LoginPage extends BasePage{
 		
 	}
 
+	public WebElement GetUserIPngElement() {
+		return GetElement("headpng");
+		
+	}
+	
+	public WebElement GetUserInfoElement() {
+		return GetElement("UserNameElement");
+		
+	}
 }

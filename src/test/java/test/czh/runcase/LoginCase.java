@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
 import test.czh.handle.LoginHandle;
 import test.czh.page.LoginPage;
 
@@ -16,7 +17,7 @@ public class LoginCase {
 	public LoginHandle loginhandle;
 	@BeforeClass
 	  public void beforeClass() throws Exception {
-		     System.setProperty("webdriver.chrome.driver", "D:\\BaiduNetdiskDownload\\chromedriver.exe");
+		     System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 			 driver = new ChromeDriver();
 			 driver.get("https://zhan.zzxes.com.cn/#/");
 			 Thread.sleep(2000);
@@ -35,10 +36,23 @@ public class LoginCase {
 	  }
 	
 	@Test
-	public void TestLoginSucccess(){
+	public void TestLoginSucccess() throws Exception{
 		loginhandle.Senduser("13129562261");
 		loginhandle.SendPassword("czh123");
 		loginhandle.ClickLogin();
+		Thread.sleep(2000);
+		String username=loginhandle.GetUserText();
+		Assert.assertEquals(username, "陈镇华1");
+	}
+	
+	@Test
+	public void TestLoginuserError() throws Exception{
+		loginhandle.Senduser("131295622611");
+		loginhandle.SendPassword("czh123");
+		loginhandle.ClickLogin();
+		Thread.sleep(2000);
+		String username=loginhandle.GetUserText();
+		Assert.assertEquals(username, "陈镇华1");
 	}
 	 @AfterMethod
 	  public void afterMethod() {

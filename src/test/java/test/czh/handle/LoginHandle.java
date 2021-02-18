@@ -29,5 +29,9 @@ public class LoginHandle {
 		loginpage.GeteLoginButton().click();
 	}
 	
+	public String GetUserText(){
+		String username=loginpage.GetUserInfoElement().getText();
+		return username;
+	}
 	
 }

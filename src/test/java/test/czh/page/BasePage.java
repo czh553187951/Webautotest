@@ -3,6 +3,7 @@ package test.czh.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import test.czh.util.ProUtil;
 
@@ -38,4 +39,11 @@ public class BasePage {
 		}
 	}
 
+	
+	
+	public void MoveToElement(WebElement ToElement){
+		
+		Actions MoseAction=new Actions(driver);
+		MoseAction.moveToElement(ToElement).perform();
+	}
 }
