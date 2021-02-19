@@ -2,7 +2,6 @@ package test.czh;
 
 import org.testng.annotations.Test;
 
-import junit.framework.Assert;
 
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;

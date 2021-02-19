@@ -44,7 +44,6 @@ public class LoginHandle {
 	
 	public void SendExhibitionInput(String exhibitionInput) {
 		logger.info("你输入展会为"+exhibitionInput);
-
 		firstpage.GetExhibitionInputElement().sendKeys(exhibitionInput);
 	}
 	
