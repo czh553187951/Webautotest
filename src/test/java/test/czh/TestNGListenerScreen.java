@@ -13,11 +13,13 @@ import org.testng.TestListenerAdapter;
 
 import com.google.common.io.Files;
 
+import test.czh.runcase.LoginCase;
+
 public class TestNGListenerScreen extends TestListenerAdapter{
 	@Override
 	  public void onTestFailure(ITestResult tr) {
 		System.out.println(tr.getInstance());
-		TestNGCase tc=(TestNGCase)tr.getInstance();
+		LoginCase tc=(LoginCase)tr.getInstance();
 		WebDriver driver=tc.driver;
 		this.TakeScreenShot(driver);
 		super.onTestFailure(tr);

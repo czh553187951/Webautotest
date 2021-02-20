@@ -1,30 +1,40 @@
 package test.czh.runcase;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import junit.framework.Assert;
+import test.czh.TestNGListenerScreen;
 import test.czh.handle.LoginHandle;
-import test.czh.page.LoginPage;
+
+
+@Listeners(TestNGListenerScreen.class)
 
 public class LoginCase {
+	static Logger logger=Logger.getLogger(LoginCase.class);
 	public WebDriver driver;
 	public LoginHandle loginhandle;
 	@BeforeClass
 	  public void beforeClass() throws Exception {
+			 PropertyConfigurator.configure("log4j.properties");
+
 		     System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 			 driver = new ChromeDriver();
+			 logger.info("初始化浏览器");
 			 driver.get("https://zhan.zzxes.com.cn/#/");
+			 logger.info("访问首页");
 			 Thread.sleep(2000);
 			 driver.findElement(By.className("ant-input")).sendKeys("演示");
 			 driver.findElement(By.className("exhibition-body-titles")).click();
 			 driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/button")).click();
-			// driver.get("https://coding.imooc.com/");
 			 try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
@@ -37,6 +47,7 @@ public class LoginCase {
 	
 	@Test
 	public void TestLoginSucccess() throws Exception{
+		logger.info("runtest1");
 		loginhandle.Senduser("13129562261");
 		loginhandle.SendPassword("czh123");
 		loginhandle.ClickLogin();
@@ -47,6 +58,7 @@ public class LoginCase {
 	
 	@Test
 	public void TestLoginuserError() throws Exception{
+		logger.info("runtest2");
 		loginhandle.Senduser("131295622611");
 		loginhandle.SendPassword("czh123");
 		loginhandle.ClickLogin();
