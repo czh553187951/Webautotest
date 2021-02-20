@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="password" value="czh123"/>
+    <parameter name="user" value="13129562261"/>
+    <parameter name="url" value="https://zhan.zzxes.com.cn/#/"/>
+    <parameter name="exhibitionname" value="演示"/>
     <classes>
-      <class name="test.czh.Logintest"/>
+      <class name="test.czh.runcase.LoginCase">
+        <methods>
+          <include name="TestLoginuserError"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.czh.runcase.LoginCase -->
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

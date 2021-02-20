@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import test.czh.page.LoginPage;
 import test.czh.runcase.LoginCase;
 
+
+//登录页面动作封装
 public class LoginHandle {
 	
 	public LoginPage loginpage;
@@ -41,4 +43,16 @@ public class LoginHandle {
 		return username;
 	}
 	
+	public void Sendexhibition(String exhibition) {
+		loginpage.GetInputexhibition().sendKeys(exhibition)
+		;
+	}
+	
+	public void Clickchooseexhibition(){
+		loginpage.Getchooseexhibition().click();
+	}
+	
+	public void ClickLoginbutton(){
+		loginpage.GetLoginButton().click();
+	}
 }

@@ -43,4 +43,21 @@ public class LoginPage extends BasePage{
 		return GetElement("UserNameElement");
 		
 	}
+	
+
+	public WebElement GetInputexhibition() {
+		return GetElement("Inputexhibition");
+		
+	}
+	
+	
+	public WebElement Getchooseexhibition() {
+		return GetElement("chooseexhibition");
+		
+	}
+	
+	public WebElement GetLoginButton() {
+		return GetElement("LoginButton");
+		
+	}
 }

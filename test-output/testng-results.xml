@@ -1,47 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-20T15:23:55 CST" name="Default suite" finished-at="2021-02-20T15:24:10 CST" duration-ms="15874">
+  <suite started-at="2021-02-20T18:35:43 CST" name="Suite" finished-at="2021-02-20T18:36:10 CST" duration-ms="27067">
     <groups>
     </groups>
-    <test started-at="2021-02-20T15:23:55 CST" name="Default test" finished-at="2021-02-20T15:24:10 CST" duration-ms="15874">
+    <test started-at="2021-02-20T18:35:43 CST" name="Test" finished-at="2021-02-20T18:35:56 CST" duration-ms="13643">
       <class name="test.czh.runcase.LoginCase">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.czh.runcase.LoginCase@1573f9fc]" started-at="2021-02-20T15:23:55 CST" name="beforeClass" finished-at="2021-02-20T15:24:06 CST" duration-ms="11085" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.czh.runcase.LoginCase@38425407]" started-at="2021-02-20T18:35:43 CST" name="beforeClass" finished-at="2021-02-20T18:35:53 CST" duration-ms="10217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://zhan.zzxes.com.cn/#/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[演示]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TestLoginSucccess()[pri:0, instance:test.czh.runcase.LoginCase@1573f9fc]" started-at="2021-02-20T15:24:06 CST" name="TestLoginSucccess" finished-at="2021-02-20T15:24:08 CST" duration-ms="2286" status="PASS">
+        <test-method signature="TestLoginSucccess(java.lang.String, java.lang.String)[pri:0, instance:test.czh.runcase.LoginCase@38425407]" started-at="2021-02-20T18:35:53 CST" name="TestLoginSucccess" finished-at="2021-02-20T18:35:55 CST" duration-ms="2264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[13129562261]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[czh123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLoginSucccess -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@1573f9fc]" started-at="2021-02-20T15:24:08 CST" name="afterMethod" finished-at="2021-02-20T15:24:09 CST" duration-ms="1002" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@38425407]" started-at="2021-02-20T18:35:55 CST" name="afterMethod" finished-at="2021-02-20T18:35:56 CST" duration-ms="1002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TestLoginuserError()[pri:0, instance:test.czh.runcase.LoginCase@1573f9fc]" started-at="2021-02-20T15:24:09 CST" name="TestLoginuserError" finished-at="2021-02-20T15:24:09 CST" duration-ms="28" status="FAIL">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.czh.runcase.LoginCase@38425407]" started-at="2021-02-20T18:35:56 CST" name="afterClass" finished-at="2021-02-20T18:35:56 CST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.czh.runcase.LoginCase -->
+    </test> <!-- Test -->
+    <test started-at="2021-02-20T18:35:56 CST" name="Test1" finished-at="2021-02-20T18:36:10 CST" duration-ms="13398">
+      <class name="test.czh.runcase.LoginCase">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.czh.runcase.LoginCase@489115ef]" started-at="2021-02-20T18:35:56 CST" name="beforeClass" finished-at="2021-02-20T18:36:06 CST" duration-ms="9817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://zhan.zzxes.com.cn/#/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[演示]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TestLoginuserError()[pri:0, instance:test.czh.runcase.LoginCase@489115ef]" started-at="2021-02-20T18:36:06 CST" name="TestLoginuserError" finished-at="2021-02-20T18:36:08 CST" duration-ms="2228" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".ant\-dropdown\-link"}
   (Session info: chrome=88.0.4324.150)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'DESKTOP-I913D3N', ip: '192.168.1.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir13912_673772686}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58980}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 1b18a669c3c9104235486d77eb950386
-*** Element info: {Using=id, value=username}]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir21684_1405437983}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65259}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: ed8538565e2c53cb039f8642aa64a450
+*** Element info: {Using=class name, value=ant-dropdown-link}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ant\-dropdown\-link"}
   (Session info: chrome=88.0.4324.150)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'DESKTOP-I913D3N', ip: '192.168.1.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir13912_673772686}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58980}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 1b18a669c3c9104235486d77eb950386
-*** Element info: {Using=id, value=username}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir21684_1405437983}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65259}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: ed8538565e2c53cb039f8642aa64a450
+*** Element info: {Using=class name, value=ant-dropdown-link}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -54,13 +112,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-at test.czh.page.BasePage.GetElement(BasePage.java:23)
-at test.czh.page.LoginPage.GetUserElement(LoginPage.java:17)
-at test.czh.handle.LoginHandle.Senduser(LoginHandle.java:21)
-at test.czh.runcase.LoginCase.TestLoginuserError(LoginCase.java:62)
+at test.czh.page.BasePage.GetElement(BasePage.java:24)
+at test.czh.page.LoginPage.GetUserInfoElement(LoginPage.java:43)
+at test.czh.handle.LoginHandle.GetUserText(LoginHandle.java:42)
+at test.czh.runcase.LoginCase.TestLoginuserError(LoginCase.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,15 +153,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLoginuserError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@1573f9fc]" started-at="2021-02-20T15:24:09 CST" name="afterMethod" finished-at="2021-02-20T15:24:10 CST" duration-ms="1001" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@489115ef]" started-at="2021-02-20T18:36:09 CST" name="afterMethod" finished-at="2021-02-20T18:36:10 CST" duration-ms="1001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.czh.runcase.LoginCase@1573f9fc]" started-at="2021-02-20T15:24:10 CST" name="afterClass" finished-at="2021-02-20T15:24:10 CST" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.czh.runcase.LoginCase@489115ef]" started-at="2021-02-20T18:36:10 CST" name="afterClass" finished-at="2021-02-20T18:36:10 CST" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- test.czh.runcase.LoginCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>
