@@ -40,12 +40,7 @@
 	    <version>1.2.17</version>
 	</dependency>
 
-	 <dependency>
-     <groupId>org.testng</groupId>
-     <artifactId>testng</artifactId>
-     <version>6.9.10</version>
-     <scope>test</scope>
-  </dependency>
+	
   <!-- https://mvnrepository.com/artifact/commons-email/commons-email -->
 <dependency>
     <groupId>commons-email</groupId>
