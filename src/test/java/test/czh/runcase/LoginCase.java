@@ -57,7 +57,7 @@ public class LoginCase extends BaseCase {
 	  }
 	
 	//默认无法从testngxml中取到值时使用@Optional("")来取值
-	@Parameters({"user","password"})
+    @Parameters({"user","password"})
 	@Test
 	public void TestLoginSucccess(String user,String password) throws Exception{
 		logger.info("runtest1");

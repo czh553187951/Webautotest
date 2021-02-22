@@ -15,18 +15,5 @@
       </methods>
       </class>
     </classes>
-  </test>
-  <test name="Test1">
-	<parameter name="user" value="13129562261"></parameter>
-	<parameter name="password" value="czh123"></parameter>
-	<parameter name="url" value="https://zhan.zzxes.com.cn/#/"></parameter>
-	<parameter name="exhibitionname" value="演示"></parameter>	
-    <classes>
-      <class name="test.czh.runcase.LoginCase">
-       <methods>
-		<include name="TestLoginuserError"></include>
-      </methods>
-      </class>
-    </classes>
-  </test> <!-- Test -->
+    </test>
 </suite> <!-- Suite -->
