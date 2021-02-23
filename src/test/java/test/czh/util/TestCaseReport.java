@@ -162,7 +162,7 @@ public class TestCaseReport implements IReporter{
 			//BufferedWriter output = new BufferedWriter();
 			//output.write(new String(s.getBytes("gbk"),"utf-8"));
 			//BufferedWriter output = new BufferedWriter(new FileWriter(path));
-			BufferedWriter output = new BufferedWriter( new OutputStreamWriter(new FileOutputStream(new File(path)),"utf-8"));
+			BufferedWriter output = new BufferedWriter( new OutputStreamWriter(new FileOutputStream(new File(path)),"UTF-8"));
 			template = template.replaceFirst("\\$\\{resultData\\}", Matcher.quoteReplacement(gson.toJson(result)));
 			output.write(template);
 			output.flush();
