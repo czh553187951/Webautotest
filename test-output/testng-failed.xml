@@ -15,7 +15,7 @@
     <classes>
       <class name="test.czh.runcase.LoginCase">
         <methods>
-          <include name="TestLoginSucccess"/>
+          <include name="TestLoginuserError"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>

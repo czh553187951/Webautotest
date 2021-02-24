@@ -78,6 +78,7 @@ public class LoginCase extends BaseCase {
 		Thread.sleep(2000);
 		String username=loginhandle.GetUserText();
 		Assert.assertEquals(username, "陈镇华1");
+		logger.error(driver);
 	}
 	 @AfterMethod
 	  public void afterMethod() {
