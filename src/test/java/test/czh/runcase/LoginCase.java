@@ -2,10 +2,8 @@ package test.czh.runcase;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -16,7 +14,6 @@ import org.testng.annotations.Test;
 import test.czh.TestNGListenerScreen;
 import test.czh.handle.HomeHandle;
 import test.czh.handle.LoginHandle;
-
 
 @Listeners(TestNGListenerScreen.class)
 
@@ -66,7 +63,7 @@ public class LoginCase extends BaseCase {
 		loginhandle.ClickLogin();
 		Thread.sleep(2000);
 		String username=loginhandle.GetUserText();
-		Assert.assertEquals(username, "陈镇华1");
+		AssertJUnit.assertEquals(username, "陈镇华1");
 	}
 	
 	@Test
@@ -77,7 +74,7 @@ public class LoginCase extends BaseCase {
 		loginhandle.ClickLogin();
 		Thread.sleep(2000);
 		String username=loginhandle.GetUserText();
-		Assert.assertEquals(username, "陈镇华1");
+		AssertJUnit.assertEquals(username, "陈镇华1");
 		logger.error(driver);
 	}
 	 @AfterMethod
