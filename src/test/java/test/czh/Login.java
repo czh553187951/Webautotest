@@ -13,7 +13,7 @@ public class Login {
 	public WebDriver driver;
 	public void IntDriver() throws Exception{
 
-		 System.setProperty("webdriver.chrome.driver", "D:\\BaiduNetdiskDownload\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		 driver = new ChromeDriver();
 		 driver.get("https://zhan.zzxes.com.cn/#/");
 		 Thread.sleep(2000);

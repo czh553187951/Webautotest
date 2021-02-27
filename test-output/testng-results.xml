@@ -1,82 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-24T16:14:47 CST" name="Default suite" finished-at="2021-02-24T16:14:58 CST" duration-ms="11512">
+  <suite name="Default suite" duration-ms="14345" started-at="2021-02-27T23:00:59 CST" finished-at="2021-02-27T23:01:13 CST">
     <groups>
     </groups>
-    <test started-at="2021-02-24T16:14:47 CST" name="Default test" finished-at="2021-02-24T16:14:58 CST" duration-ms="11512">
-      <class name="test.czh.Rent">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.czh.Rent@5e0e82ae]" started-at="2021-02-24T16:14:47 CST" name="beforeTest" finished-at="2021-02-24T16:14:47 CST" duration-ms="6" status="PASS">
+    <test name="Default test" duration-ms="14345" started-at="2021-02-27T23:00:59 CST" finished-at="2021-02-27T23:01:13 CST">
+      <class name="test.czh.TestBuyshop">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.czh.TestBuyshop@31206beb]" name="beforeTest" is-config="true" duration-ms="11" started-at="2021-02-27T23:00:59 CST" finished-at="2021-02-27T23:00:59 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.czh.Rent@5e0e82ae]" started-at="2021-02-24T16:14:47 CST" name="beforeClass" finished-at="2021-02-24T16:14:51 CST" duration-ms="3940" status="PASS">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.czh.TestBuyshop@31206beb]" name="beforeClass" is-config="true" duration-ms="2703" started-at="2021-02-27T23:00:59 CST" finished-at="2021-02-27T23:01:01 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.czh.Rent@5e0e82ae]" started-at="2021-02-24T16:14:51 CST" name="beforeMethod" finished-at="2021-02-24T16:14:53 CST" duration-ms="2489" status="PASS">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.czh.TestBuyshop@31206beb]" name="beforeMethod" is-config="true" duration-ms="7370" started-at="2021-02-27T23:01:01 CST" finished-at="2021-02-27T23:01:09 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test1()[pri:0, instance:test.czh.Rent@5e0e82ae]" started-at="2021-02-24T16:14:53 CST" name="test1" finished-at="2021-02-24T16:14:55 CST" duration-ms="2392" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: ""]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: ""
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
-at java.base/java.lang.Integer.parseInt(Integer.java:662)
-at java.base/java.lang.Integer.parseInt(Integer.java:770)
-at test.czh.Rent.test1(Rent.java:57)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+        <test-method status="PASS" signature="f1()[pri:0, instance:test.czh.TestBuyshop@31206beb]" name="f1" duration-ms="2175" started-at="2021-02-27T23:01:09 CST" finished-at="2021-02-27T23:01:11 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.Rent@5e0e82ae]" started-at="2021-02-24T16:14:55 CST" name="afterMethod" finished-at="2021-02-24T16:14:57 CST" duration-ms="2002" status="PASS">
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.czh.TestBuyshop@31206beb]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2021-02-27T23:01:11 CST" finished-at="2021-02-27T23:01:13 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.czh.Rent@5e0e82ae]" started-at="2021-02-24T16:14:58 CST" name="afterClass" finished-at="2021-02-24T16:14:58 CST" duration-ms="655" status="PASS">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.czh.TestBuyshop@31206beb]" name="afterClass" is-config="true" duration-ms="50" started-at="2021-02-27T23:01:13 CST" finished-at="2021-02-27T23:01:13 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.czh.Rent@5e0e82ae]" started-at="2021-02-24T16:14:58 CST" name="afterTest" finished-at="2021-02-24T16:14:58 CST" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.czh.TestBuyshop@31206beb]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-02-27T23:01:13 CST" finished-at="2021-02-27T23:01:13 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- test.czh.Rent -->
+      </class> <!-- test.czh.TestBuyshop -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

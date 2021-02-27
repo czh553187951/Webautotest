@@ -16,6 +16,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+
+//测试遍历首页所有图标点击返回
 public class CourseList {
 		
 	public WebDriver driver;

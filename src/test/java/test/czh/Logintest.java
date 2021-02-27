@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import test.czh.util.ProUtil;
 
+//测试case 和框架无关
 public class Logintest {
 
 	public WebDriver driver;

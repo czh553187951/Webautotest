@@ -19,7 +19,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.AfterTest;
 
-
+//测试case无关框架
 @Listeners(TestNGListenerScreen.class)
 public class TestNGCase {
 	private static Logger logger=Logger.getLogger(TestNGCase.class);
