@@ -40,12 +40,7 @@ public class LoginCase extends BaseCase {
 			 homeHandle.Sendexhibition(exhibitionname);
 			 homeHandle.Clickchooseexhibition();
 			 homeHandle.ClickLoginbutton();
-		  /* loginhandle.Sendexhibition("演示");
-			 loginhandle.Clickchooseexhibition();
-			 loginhandle.ClickLoginbutton();
-			 driver.findElement(By.className("ant-input")).sendKeys("演示");
-			 driver.findElement(By.className("exhibition-body-titles")).click();
-			 driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/button")).click();*/
+		
 			 try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
