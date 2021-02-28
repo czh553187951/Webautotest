@@ -61,10 +61,11 @@ public class TestBuyshop {
 				System.out.println("添加购物车成功！");
 
 			}
-			else if(driver.findElement(By.className("alertText")).getText().contains("商品已经在购物车内")){
+	/*		else if(driver.findElement(By.className("alertText")).getText().contains("商品已经在购物车内")){
 				System.out.println("商品已经在购物车内");
+				
 
-			}else {
+			}*/else {
 				System.out.println("添加失败");
 
 			}
