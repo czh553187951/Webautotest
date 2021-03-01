@@ -60,15 +60,25 @@ public class HandleCookie {
 		  String value="UzODAyM2MyYmM4MWFlYjk4YTg2NDZkNzUwM2Y0OGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTY2Nzc4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEyMjVlYmNlODc5Yzc1YmQ5OGEzZDM0NGRjY2Y2YmNmmkY7YJpGO2A%3DMj";
 		  System.out.println("登录失败");
 			 Set<Cookie> cookies=driver.manage().getCookies();
-			 for(Cookie cookie:cookies) {
-				 System.out.println("---->"+cookie);
-				 if(cookie.getName().equals("apsid")) {
-					 System.out.println("登录成功");
+			 for(Cookie cookie1:cookies) {
+				 System.out.println("---->"+cookie1);
+				 if(cookie1.getName().equals("apsid")) {
+					 System.out.println("登录成功,获取到cookie"+cookie1);
 				 } 
-				 else {
-					 Cookie cookie1=new Cookie("apsid",value);
-				 }
 			 }
+			 Cookie cookie=new Cookie("apsid",value,".imooc.com","/",null);
+			 driver.manage().addCookie(cookie);
+			 System.out.println("登录成功，获取到cookie-------------------");
+			 driver.get("https://coding.imooc.com/class/400.html");
+
+			 System.out.println("登录成功，获取到cookie-------------------"+driver.manage().getCookies());
+
+			 try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 	  }
 	  
 	  
