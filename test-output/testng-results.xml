@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-28T17:55:49 CST" name="Suite" finished-at="2021-02-28T17:56:04 CST" duration-ms="14957">
+  <suite started-at="2021-02-28T20:01:54 CST" name="Suite" finished-at="2021-02-28T20:02:09 CST" duration-ms="15012">
     <groups>
     </groups>
-    <test started-at="2021-02-28T17:55:49 CST" name="Test" finished-at="2021-02-28T17:56:04 CST" duration-ms="14957">
+    <test started-at="2021-02-28T20:01:54 CST" name="Test" finished-at="2021-02-28T20:02:09 CST" duration-ms="15012">
       <class name="test.czh.runcase.LoginCase">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T17:55:49 CST" name="beforeClass" finished-at="2021-02-28T17:55:59 CST" duration-ms="10091" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T20:01:54 CST" name="beforeClass" finished-at="2021-02-28T20:02:05 CST" duration-ms="10318" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TestLoginSucccess(java.lang.String, java.lang.String)[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T17:55:59 CST" name="TestLoginSucccess" finished-at="2021-02-28T17:56:01 CST" duration-ms="2301" status="PASS">
+        <test-method signature="TestLoginSucccess(java.lang.String, java.lang.String)[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T20:02:05 CST" name="TestLoginSucccess" finished-at="2021-02-28T20:02:07 CST" duration-ms="2221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,11 +44,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLoginSucccess -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T17:56:01 CST" name="afterMethod" finished-at="2021-02-28T17:56:02 CST" duration-ms="1002" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T20:02:07 CST" name="afterMethod" finished-at="2021-02-28T20:02:08 CST" duration-ms="1000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TestLoginuserError()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T17:56:02 CST" name="TestLoginuserError" finished-at="2021-02-28T17:56:02 CST" duration-ms="76" status="FAIL">
+        <test-method signature="TestLoginuserError()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T20:02:08 CST" name="TestLoginuserError" finished-at="2021-02-28T20:02:08 CST" duration-ms="30" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
@@ -57,8 +57,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'DESKTOP-I913D3N', ip: '192.168.1.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir13944_1125021294}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65273}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 789b84223e2a467e9e7a9bb9276fc201
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir17192_514188336}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57843}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1fe148939ee589e12befb568433f86a0
 *** Element info: {Using=id, value=username}]]>
             </message>
             <full-stacktrace>
@@ -68,8 +68,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'DESKTOP-I913D3N', ip: '192.168.1.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir13944_1125021294}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65273}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 789b84223e2a467e9e7a9bb9276fc201
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Administrator\AppData\Local\Temp\scoped_dir17192_514188336}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57843}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1fe148939ee589e12befb568433f86a0
 *** Element info: {Using=id, value=username}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -124,11 +124,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLoginuserError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T17:56:02 CST" name="afterMethod" finished-at="2021-02-28T17:56:03 CST" duration-ms="1001" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T20:02:08 CST" name="afterMethod" finished-at="2021-02-28T20:02:09 CST" duration-ms="1001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T17:56:03 CST" name="afterClass" finished-at="2021-02-28T17:56:04 CST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.czh.runcase.LoginCase@ba54932]" started-at="2021-02-28T20:02:09 CST" name="afterClass" finished-at="2021-02-28T20:02:09 CST" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
