@@ -1,7 +1,10 @@
 package test.czh.page;
 
+import java.util.Set;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -54,5 +57,18 @@ public class BasePage {
 		
 		Actions MoseAction=new Actions(driver);
 		MoseAction.moveToElement(ToElement).perform();
+	}
+	
+	
+	public boolean GetCookie(String key) {
+		boolean flag=false;
+		Set<Cookie> cookies=driver.manage().getCookies();
+		for(Cookie cookie:cookies) {
+			 System.out.println("---->"+cookie);
+			 if(cookie.getName().equals(key)) {
+				 flag=true;
+			 } 
+		 }
+		return flag;
 	}
 }
