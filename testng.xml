@@ -7,17 +7,17 @@
                      <listener class-name="test.czh.util.TestCaseReport" />
                      
             </listeners>  
-	<parameter name="browser" value="chrome"></parameter>
-	<test name="Test">
-	<parameter name="user" value="13129562261"></parameter>
-	<parameter name="password" value="czh123"></parameter>
-	<parameter name="url" value="https://zhan.zzxes.com.cn/#/"></parameter>
-	<parameter name="exhibitionname" value="演示"></parameter>	
+	
+	
+    
+    <test name="Test1">
+    <parameter name="browser" value="chrome"></parameter>
+	<parameter name="coursename" value="快速搞定前端JavaScript面试-慕课网"></parameter>
+	<parameter name="url" value="https://coding.imooc.com/class/400.html"></parameter>
     <classes>
-      <class name="test.czh.runcase.LoginCase">
+      <class name="test.czh.runcase.Coursecase">
        <methods>
-		<include name="TestLoginSucccess"></include>
-		<include name="TestLoginuserError"></include>
+		<include name="TestAddCouseSucccesss"></include>
 		
       </methods>
       </class>

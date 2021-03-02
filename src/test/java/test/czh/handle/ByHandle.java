@@ -48,6 +48,11 @@ public class ByHandle {
 
 	}
 	
+	public String GetCourseTitle() {
+		
+	return driver.getTitle();
+	}
+	
 	public int GetCarnum() {
 		int CartNum;
 		try {

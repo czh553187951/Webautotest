@@ -40,6 +40,6 @@ public class CoursePage extends BasePage{
 		
 	}
 	
-	
+
 	
 }

@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="test.czh.util.TestCaseReport"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="password" value="czh123"/>
-    <parameter name="user" value="13129562261"/>
-    <parameter name="url" value="https://zhan.zzxes.com.cn/#/"/>
-    <parameter name="exhibitionname" value="演示"/>
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="coursename" value="快速搞定前端JavaScript面试-慕课网"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://coding.imooc.com/class/400.html"/>
     <classes>
-      <class name="test.czh.runcase.LoginCase">
+      <class name="test.czh.runcase.Coursecase">
         <methods>
-          <include name="TestLoginuserError"/>
+          <include name="TestAddCouseSucccesss" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- test.czh.runcase.LoginCase -->
+      </class> <!-- test.czh.runcase.Coursecase -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="2.278">
+           time="2.307">
   <properties />
-            <testcase name="TestLoginuserError" time="0.027" classname="test.czh.runcase.LoginCase">
+            <testcase name="TestLoginuserError" time="0.026" classname="test.czh.runcase.LoginCase">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
   (Session info: chrome=88.0.4324.190)
@@ -14,8 +14,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;DESKTOP-NUUGM2A&apos;, ip: &apos;10.0.0.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_162&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir11552_284076073}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:49632}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 6a785d2ae66cf3c9aa86403619905696
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir19376_2138365287}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:50159}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: ffbf45de084202fba7379ec9ad827b37
 *** Element info: {Using=id, value=username}"
               >
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
@@ -24,8 +24,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'DESKTOP-NUUGM2A', ip: '10.0.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir11552_284076073}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:49632}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 6a785d2ae66cf3c9aa86403619905696
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\czh\AppData\Local\Temp\scoped_dir19376_2138365287}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:50159}, acceptInsecureCerts=false, browserVersion=88.0.4324.190, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: ffbf45de084202fba7379ec9ad827b37
 *** Element info: {Using=id, value=username}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -41,7 +41,7 @@ Session ID: 6a785d2ae66cf3c9aa86403619905696
   org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
   org.openqa.selenium.By$ById.findElement(By.java:218)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-  test.czh.page.BasePage.GetElement(BasePage.java:24)
+  test.czh.page.BasePage.GetElement(BasePage.java:27)
   test.czh.page.LoginPage.GetUserElement(LoginPage.java:17)
   test.czh.handle.LoginHandle.Senduser(LoginHandle.java:23)
   test.czh.runcase.LoginCase.TestLoginuserError(LoginCase.java:70)
@@ -79,6 +79,6 @@ Session ID: 6a785d2ae66cf3c9aa86403619905696
           </testcase>
   
   
-            <testcase name="TestLoginSucccess" time="2.251" classname="test.czh.runcase.LoginCase" />
+            <testcase name="TestLoginSucccess" time="2.281" classname="test.czh.runcase.LoginCase" />
       
 </testsuite>
