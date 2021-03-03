@@ -11,24 +11,29 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import test.czh.handle.ByHandle;
+import test.czh.handle.CourseHandle;
 
 
-public class Coursecase extends BaseCase {
+public class Coursecase extends BaseCase{
 	
 	static Logger logger=Logger.getLogger(Coursecase.class);
-	public WebDriver driver;
-	ByHandle byhandle;
 	
+	public WebDriver driver;
+	CourseHandle coursehandle;
+	ByHandle  byHandle;
 	@Parameters({"url","browser"})
 	@BeforeClass
 	  public void beforeClass(String url,String browser) throws Exception {
 			 PropertyConfigurator.configure("log4j.properties");
-			 driver=GetDriver(browser);
+			 
 			 logger.info("初始化浏览器");
-			 driver.get(url);
 			 logger.info("访问目标页");
-			 Thread.sleep(2000);
+			 driver=GetDriver(browser);
+			 driver.get(url);
 			
+			 Thread.sleep(2000);
+			 byHandle=new ByHandle(driver);
+			 Thread.sleep(2000);
 
 		
 	  }
@@ -37,11 +42,12 @@ public class Coursecase extends BaseCase {
 	@Parameters({"coursename"})
 	@Test
 	public void TestAddCouseSucccesss(String coursename) throws Exception{
-		logger.info("runtest1");
-		String course_title = byhandle.GetCourseTitle();
+	logger.info("runtest1");
+		  String course_title = byHandle.GetTitle();
 		  boolean flag = course_title.contains(coursename);
 		  Assert.assertEquals(flag, true);
-		Assert.assertEquals(flag, true);
+		  byHandle.clickAddcart();
+		
 	}
 	
 	

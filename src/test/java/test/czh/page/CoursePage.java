@@ -34,6 +34,7 @@ public class CoursePage extends BasePage{
 		return GetElement("cart_already");
 		
 	}
+
 	
 	public boolean GetUserIsLogin() {
 		return GetCookie("apsid");

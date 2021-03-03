@@ -6,18 +6,15 @@ import org.openqa.selenium.WebDriver;
 
 import test.czh.page.CoursePage;
 
-public class ByHandle {
+public class CourseHandle {
 	static Logger logger=Logger.getLogger(ByHandle.class);
-	public WebDriver driver;
 	public CoursePage coursePage;
+	public WebDriver driver;
 	
-
-
-	public ByHandle(WebDriver driver){
+	public CourseHandle(WebDriver driver){
 		this.driver=driver;
 		coursePage=new CoursePage(driver);
 	}
-	
 	
 	public void clickAddcart() {
 		
@@ -45,12 +42,6 @@ public class ByHandle {
 
 	}
 	
-	public String GetTitle() {
-		return driver.getTitle();
-		
-		
-	}
-	
 	public int GetCarnum() {
 		int CartNum;
 		try {
@@ -62,6 +53,13 @@ public class ByHandle {
 	
 	}
 	
+	public String Gettitle() {
+		
+		return driver.getTitle();
+	
+
+	}
+	
 	public void SetCookie() {
 		 String value="UzODAyM2MyYmM4MWFlYjk4YTg2NDZkNzUwM2Y0OGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTY2Nzc4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEyMjVlYmNlODc5Yzc1YmQ5OGEzZDM0NGRjY2Y2YmNmmkY7YJpGO2A%3DMj";
 		 driver.manage().deleteAllCookies();
@@ -69,7 +67,4 @@ public class ByHandle {
 		 driver.manage().addCookie(cookie);
 
 	}
-	
-	
-	
 }
